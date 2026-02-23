@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: pente_inc_pentesites_conversation_be
+    ports:
+      - '8080:8080'
+    env_file:
+      - .env
+    restart: unless-stopped
